@@ -14,7 +14,7 @@ public class Application {
      * Задачи, которые следует выполнить в рамках
      * лабораторной работы.
      */
-    private static final Task[] tasks = {
+    private static final Task[] TASKS = {
         new Task1(),
         new Task2(),
         new Task3(),
@@ -36,6 +36,8 @@ public class Application {
          * порядок и/или закомментировать любой из элементов
          * массива.
          */
-	    for (Task task : tasks) task.run();
+	    for (Task task : TASKS) {
+                task.run();
+            }
     }
 }
